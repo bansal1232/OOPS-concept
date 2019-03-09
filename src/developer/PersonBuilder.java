@@ -8,7 +8,12 @@ class PersonBuilder implements firstNameHolder,lastNameHolder,friendsHolder,best
     private String lastName;
     private String bestFriend;
     private ArrayList<String> friends = new ArrayList<>();
+    private PersonBuilder(){
 
+    }
+    public static firstNameHolder load(){
+         return new PersonBuilder();
+    }
     @Override
     public lastNameHolder setFirstName(String name){
         this.firstName = name;

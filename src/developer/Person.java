@@ -27,6 +27,5 @@ class Person {
             System.out.println(name);
         }
         System.out.println("Best friend -> " + bestFriend);
-        //friends.forEach(name -> System.out.println(name));
     }
 }
